@@ -16,3 +16,5 @@ Handy little site to find if you can call setState() in any of React.js
 
 - Optimize for performance - Load Time, First Paint (FMP, FMC)
 - Fix styled-components' SSR issue
+- Fix UI issues, especially on mobile
+- Provide more detailed information to better explain the limitations.
