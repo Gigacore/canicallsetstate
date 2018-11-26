@@ -1,11 +1,11 @@
 # 🤔 Can I Call ```setState()``` ?
-Handy little site to find if you can call setState() in any of React.js
+Handy little site to find if you can call setState() in any of React.js' lifecycle hooks.
 
 ### Running it on local
 
-- git clone
-- npm i
-- npm run dev
+- ```git clone```
+- ```npm i```
+- ```npm run dev```
 
 ### Tech Stack
 
