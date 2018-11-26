@@ -8,8 +8,10 @@ export default function ComponentDidUpdate() {
   const example = `
       componentDidUpdate(prevProps) {
         if (this.props.userID !== prevProps.userID) {
-          this.fetchData(this.props.userID);
-        }
+          this.setState({
+            userID: this.props.userID
+          });
+        };
       }`
 
 
