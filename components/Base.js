@@ -114,16 +114,18 @@ export default function Base({ example, conditionalCall, canCall, cannotCall, de
         padding: 10px 0;
         font-size: 12px;
         overflow-x: scroll;
+        margin-bottom: 60px;
       }
     `
 
     const Footer = styled.footer`
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 30px;
       text-align: center;
       bottom: 0;
       font-family: 'Noto Sans KR', sans-serif;
+      background: #eee;
 
       a {
         text-decoration: none;
@@ -131,6 +133,17 @@ export default function Base({ example, conditionalCall, canCall, cannotCall, de
         color: #263238;
         font-size: 14px;
         background: #fafafa;
+      }
+
+      @media (max-width: 768px) {
+        box-shadow: 0px -2px 8px 0px #212121;
+        height: 20px;
+        padding: 10px 0 5px 0;
+
+        a {
+          background: none;
+          font-size: 12px;
+        }
       }
     `;
 
