@@ -14,7 +14,6 @@ export default function ComponentDidUpdate() {
         };
       }`
 
-
     return (
       <React.Fragment>
         <HeadContent lifecycle={lifecycle} />

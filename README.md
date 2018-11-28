@@ -1,6 +1,8 @@
 # 🤔 Can I Call ```setState()``` ?
 Handy little site to find if you can call setState() in any of React.js' lifecycle hooks.
 
+![screenshot](https://i.ibb.co/WPwMsG0/Screen-Shot-2018-11-28-at-2-53-23-PM.png)
+
 ### Running it on local
 
 - ```git clone```
