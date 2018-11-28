@@ -1,8 +1,8 @@
-import React from 'react';
 import styled from 'styled-components';
 import Router from 'next/router';
 
 export default function Base({ example, conditionalCall, canCall, cannotCall, details, lifecycle }) {
+
     const Title = styled.h1`
       font-size: 20px;
       text-align: center;
@@ -22,12 +22,12 @@ export default function Base({ example, conditionalCall, canCall, cannotCall, de
 
     const CaseWrapper = styled.div`
       height: 70px;
-      color: ${props => conditionalCall ? '#000' : '#fff'};
+      color: ${conditionalCall ? '#000' : '#fff'};
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      background: ${props => canCall ? '#4caf50' : conditionalCall ? '#ffc107' : '#f44336'};
+      background: ${canCall ? '#4caf50' : conditionalCall ? '#ffc107' : '#f44336'};
 
       @media (max-width: 768px) {
         height: 40px;
@@ -130,25 +130,36 @@ export default function Base({ example, conditionalCall, canCall, cannotCall, de
         font-size: 14px;
         background: #fafafa;
       }
-    `
-
-    const lifeCycles = ['constructor', 'componentDidMount', 'componentDidUpdate', 'componentWillUnmount', 'UNSAFE_componentWillMount', 'UNSAFE_componentWillReceiveProps', 'UNSAFE_componentWillUpdate', 'render']
-
-    const handleDropdown = () => {
-      Router.push(`/${selectElem.current.value}`);
-    }
+    `;
 
     let selectElem = React.createRef();
+
+    const lifeCycles = [
+      'constructor',
+      'componentDidMount',
+      'componentDidUpdate',
+      'componentWillUnmount',
+      'UNSAFE_componentWillMount',
+      'UNSAFE_componentWillReceiveProps',
+      'UNSAFE_componentWillUpdate',
+      'render'
+    ];
+
+    const handleDropdown = () => Router.push(`/${selectElem.current.value}`);
 
     return (
       <Content>
         <Header>
           <Title>Can I call <CourierAlt>setState()</CourierAlt> in
-            <DropDown onChange={handleDropdown} ref={selectElem}>
-              {lifeCycles.map(item => (
+            <DropDown
+              onChange={handleDropdown}
+              ref={selectElem}
+              defaultValue={lifecycle}
+            >
+              {lifeCycles.map((item, i) => (
                 <option
-                  selected={lifecycle === item}
                   value={item}
+                  key={i}
                 >
                   {`${item}()`}
                 </option>
