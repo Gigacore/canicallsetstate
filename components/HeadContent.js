@@ -8,8 +8,8 @@ export default function HeadContent(props) {
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width, user-scalable=0' />
         <meta content="http://canicallsetstate.in/" property="og:url" />
-        <meta content="Santhosh Sundar" name="title" />
-        <meta content="Handy little site to find if you can call setState() in any of React.js' lifecycles." name="description"/>
+        <meta content="🤔 Can I call setState()" name="title" />
+        <meta content="Handy little site to find if you can call setState() in React.js' lifecycles." name="description"/>
         <meta content="reactjs, react, setState, lifecycle, componentDidMount, componentDidUpdate, componentWillMount, constructor, componentWillUnmount, componentWillReceiveProps, componentWillUpdate" name="keywords"/>
         <link rel="icon" type="image/png" href="https://s3.amazonaws.com/canicallsetstate/canisetstate.png" />
         <style>
