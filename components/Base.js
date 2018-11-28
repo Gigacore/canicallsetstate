@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Router from 'next/router';
 
 export default function Base({ example, conditionalCall, canCall, cannotCall, details, lifecycle }) {

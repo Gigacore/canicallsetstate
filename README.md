@@ -14,7 +14,9 @@ Handy little site to find if you can call setState() in any of React.js' lifecyc
 
 ### TODOs
 
-- Optimize for performance - Load Time, First Paint (FMP, FMC)
-- Fix styled-components' SSR issue
-- Fix UI issues, especially on mobile
-- Provide more detailed information to better explain the limitations.
+- [x] Optimize for performance - Load Time, First Paint (FMP, FMC)
+- [x] Fix styled-components' SSR issue
+- [ ] PWA support
+- [ ] Provide more detailed information to better explain the limitations.
+- [ ] Fix UI issues, especially on mobile
+- [ ] Bump the a11y rating to 100%. Currently at 59% - https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=http://canicallsetstate.in
