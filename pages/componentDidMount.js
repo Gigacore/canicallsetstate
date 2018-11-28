@@ -12,16 +12,18 @@ export default function ComponentDidMount() {
       }, 1000)
     }
   `
-
-    return (
-      <React.Fragment>
-        <HeadContent lifecycle={lifecycle} />
-        <Base
-          canCall
-          lifecycle={lifecycle}
-          details={details}
-          example={example}
-        />
-      </React.Fragment>
-    )
+  return (
+    <React.Fragment>
+      <HeadContent
+        lifecycle={lifecycle}
+        themeColor={'#4caf50'}
+      />
+      <Base
+        canCall
+        lifecycle={lifecycle}
+        details={details}
+        example={example}
+      />
+    </React.Fragment>
+  )
 }

@@ -8,8 +8,15 @@ export default function Render() {
 
     return (
       <React.Fragment>
-        <HeadContent lifecycle={lifecycle} />
-        <Base callSetState={false} lifecycle={lifecycle} details={details} />
+        <HeadContent
+          lifecycle={lifecycle}
+          themeColor={'#f44336'}
+        />
+        <Base
+          callSetState={false}
+          lifecycle={lifecycle}
+          details={details}
+        />
       </React.Fragment>
     )
 }

@@ -18,7 +18,10 @@ export default function ComponentWillMount() {
 
     return (
       <React.Fragment>
-        <HeadContent lifecycle={lifecycle} />
+        <HeadContent
+          lifecycle={lifecycle}
+          themeColor={'#4caf50'}
+        />
         <Base
           canCall
           lifecycle={lifecycle}

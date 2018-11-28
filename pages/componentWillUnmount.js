@@ -8,7 +8,10 @@ export default function ComponentWillUnmount() {
 
     return (
       <React.Fragment>
-        <HeadContent lifecycle={lifecycle} />
+        <HeadContent
+          lifecycle={lifecycle}
+          themeColor={'#f44336'}
+        />
         <Base
           cannotCall
           lifecycle={lifecycle}
