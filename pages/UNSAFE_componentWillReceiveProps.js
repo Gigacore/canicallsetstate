@@ -2,6 +2,8 @@ import React from 'react';
 import Base from '../components/Base';
 import HeadContent from '../components/HeadContent';
 
+import { AMBER } from '../constants/themeColors';
+
 export default function ComponentWillReceiveProps() {
     const lifecycle = "UNSAFE_componentWillReceiveProps";
     const details = "If you need to update the state in response to prop changes (for example, to reset it), you may compare this.props and nextProps and perform state transitions using this.setState() in this method. Calling setState() outside the nextProps check would send your component on an indefinite render-loop if it constantly receives new props through a webservice or an event."
@@ -28,7 +30,7 @@ export default function ComponentWillReceiveProps() {
       <React.Fragment>
         <HeadContent
           lifecycle={lifecycle}
-          themeColor={'#ffc107'}
+          themeColor={AMBER}
         />
         <Base
           conditionalCall

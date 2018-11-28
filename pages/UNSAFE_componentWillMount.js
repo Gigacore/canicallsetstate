@@ -2,6 +2,8 @@ import React from 'react';
 import Base from '../components/Base';
 import HeadContent from '../components/HeadContent';
 
+import { GREEN } from '../constants/themeColors';
+
 export default function ComponentWillMount() {
     const lifecycle = "UNSAFE_componentWillMount";
     const details = "Calling setState() synchronously in this method will not trigger an extra rendering. It is recommended using the constructor() instead for initializing state."
@@ -20,7 +22,7 @@ export default function ComponentWillMount() {
       <React.Fragment>
         <HeadContent
           lifecycle={lifecycle}
-          themeColor={'#4caf50'}
+          themeColor={GREEN}
         />
         <Base
           canCall

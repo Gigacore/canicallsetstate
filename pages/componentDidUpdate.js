@@ -2,6 +2,8 @@ import React from 'react';
 import Base from '../components/Base';
 import HeadContent from '../components/HeadContent';
 
+import { AMBER } from '../constants/themeColors';
+
 export default function ComponentDidUpdate() {
   const lifecycle = "componentDidUpdate";
   const details = "You may call setState() immediately in componentDidUpdate() but note that it must be wrapped in a condition like in the example below, or you’ll cause an infinite loop. It would also cause an extra re-rendering which, while not visible to the user, can affect the component performance.";
@@ -14,12 +16,11 @@ export default function ComponentDidUpdate() {
       };
     }
   `
-
   return (
     <React.Fragment>
       <HeadContent
         lifecycle={lifecycle}
-        themeColor={'#ffc107'}
+        themeColor={AMBER}
       />
       <Base
         conditionalCall

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Router from 'next/router';
 
+import { RED, AMBER, GREEN } from '../constants/themeColors';
+
 export default function Base({ example, conditionalCall, canCall, cannotCall, details, lifecycle }) {
 
     const Title = styled.h1`
@@ -27,7 +29,7 @@ export default function Base({ example, conditionalCall, canCall, cannotCall, de
       justify-content: center;
       align-items: center;
       width: 100%;
-      background: ${canCall ? '#4caf50' : conditionalCall ? '#ffc107' : '#f44336'};
+      background: ${canCall ? GREEN : conditionalCall ? AMBER : RED};
 
       @media (max-width: 768px) {
         height: 40px;

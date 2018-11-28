@@ -2,6 +2,8 @@ import React from 'react';
 import Base from '../components/Base';
 import HeadContent from '../components/HeadContent';
 
+import { RED } from '../constants/themeColors';
+
 export default function Render() {
   const lifecycle = "render";
   const details = "Calling setState() in render() method will create infinite loop and could crash your application."
@@ -10,7 +12,7 @@ export default function Render() {
       <React.Fragment>
         <HeadContent
           lifecycle={lifecycle}
-          themeColor={'#f44336'}
+          themeColor={RED}
         />
         <Base
           callSetState={false}

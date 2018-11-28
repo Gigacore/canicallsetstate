@@ -2,6 +2,8 @@ import React from 'react';
 import Base from '../components/Base';
 import HeadContent from '../components/HeadContent';
 
+import { RED } from '../constants/themeColors';
+
 export default function Constructor() {
   const lifecycle = "constructor";
   const details = "If your component needs to use local state, assign the initial state to this.state directly in the constructor."
@@ -16,7 +18,7 @@ export default function Constructor() {
     <React.Fragment>
       <HeadContent
         lifecycle={lifecycle}
-        themeColor={'#f44336'}
+        themeColor={RED}
       />
       <Base
         cannotCall
